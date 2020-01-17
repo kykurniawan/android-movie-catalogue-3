@@ -1,5 +1,6 @@
 package com.rizky.submissionthreemoviecatalogue.ui.movie
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,6 +12,7 @@ import com.rizky.submissionthreemoviecatalogue.R
 import kotlinx.android.synthetic.main.item_row_movie.view.*
 
 class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
+
     private val mData = ArrayList<MovieItems>()
     fun setData(items: ArrayList<MovieItems>) {
         mData.clear()
@@ -48,6 +50,9 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
                         "Detail For ${movieItems.title}",
                         Toast.LENGTH_SHORT
                     ).show()
+                    val mIntent = Intent(this.context, MovieDetail::class.java)
+                    mIntent.putExtra(MovieDetail.EXTRA_MOVIE, movieItems)
+                    context.startActivity(mIntent)
                 }
             }
         }

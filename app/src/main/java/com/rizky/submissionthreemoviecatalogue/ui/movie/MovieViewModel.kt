@@ -44,6 +44,7 @@ class MovieViewModel : ViewModel() {
                         movieItems.title = movie.getString("title")
                         movieItems.overview = movie.getString("overview")
                         movieItems.poster_path = movie.getString("poster_path")
+                        movieItems.backdrop_path = movie.getString("backdrop_path")
                         movieItems.release_date = movie.getString("release_date")
                         movieItems.popularity = movie.getInt("popularity")
                         movieItems.original_language = movie.getString("original_language")

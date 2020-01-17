@@ -1,5 +1,6 @@
 package com.rizky.submissionthreemoviecatalogue.ui.movie
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -31,7 +32,7 @@ class MovieFragment : Fragment() {
 
         this.adapter = MovieAdapter()
         this.adapter.notifyDataSetChanged()
-
+        this.rv_movie.setHasFixedSize(true)
         this.rv_movie.layoutManager = LinearLayoutManager(this.context)
         this.rv_movie.adapter = this.adapter
 

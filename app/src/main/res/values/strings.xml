@@ -8,4 +8,5 @@
     <string name="overview">Movie overview</string>
     <string name="detail">Detail</string>
     <string name="tvshow_name">Name</string>
+    <string name="backdrop">Backdrop</string>
 </resources>
