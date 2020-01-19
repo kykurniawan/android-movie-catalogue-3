@@ -12,6 +12,6 @@ class MovieItems (
     var poster_path: String? = null,
     var vote_count: Int? = null,
     var popularity: Int = 0,
-    var original_language: String? = null,
-    var backdrop_path: String? = null
+    var backdrop_path: String? = null,
+    var vote_average: Int? = 0
 ) : Parcelable

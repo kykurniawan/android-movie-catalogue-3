@@ -9,4 +9,14 @@
     <string name="detail">Detail</string>
     <string name="tvshow_name">Name</string>
     <string name="backdrop">Backdrop</string>
+    <string name="poster">poster</string>
+    <string name="progress_text">Please Wait</string>
+    <string name="popularity">Popularity:</string>
+    <string name="vote_count">Vote</string>
+    <string name="vote_average">Rating</string>
+    <string name="vote">Vote:</string>
+    <string name="rating">Rating:</string>
+    <string name="release">Release: </string>
+    <string name="failed_data">Failed to load data from API</string>
+    <string name="error">Something Error</string>
 </resources>

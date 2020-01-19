@@ -44,7 +44,6 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:layout_toEndOf="@id/img_movies_poster"
-
             android:ellipsize="end"
             android:maxLines="5"
             tools:text="@string/overview" />
@@ -54,9 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="16dp"
-
             android:layout_toEndOf="@id/img_movies_poster"
-
             android:orientation="horizontal">
 
             <Button

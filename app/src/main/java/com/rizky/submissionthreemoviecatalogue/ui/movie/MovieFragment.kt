@@ -1,6 +1,5 @@
 package com.rizky.submissionthreemoviecatalogue.ui.movie
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +8,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.snackbar.Snackbar
 import com.rizky.submissionthreemoviecatalogue.R
 import kotlinx.android.synthetic.main.fragment_movie.*
 
@@ -48,6 +48,9 @@ class MovieFragment : Fragment() {
             if (movieItems != null) {
                 this.adapter.setData(movieItems)
                 showLoading(false)
+            } else {
+                val snackbar = Snackbar.make(view, R.string.failed_data, Snackbar.LENGTH_LONG)
+                snackbar.show()
             }
         })
 

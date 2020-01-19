@@ -9,7 +9,7 @@ import com.loopj.android.http.AsyncHttpResponseHandler
 import cz.msebera.android.httpclient.Header
 import org.json.JSONObject
 
-class MovieViewModel : ViewModel() {
+class MovieViewModel : ViewModel(){
 
     companion object {
         private const val API_KEY = "ad17726d6285f718d265aa2de12213bb"
@@ -47,8 +47,8 @@ class MovieViewModel : ViewModel() {
                         movieItems.backdrop_path = movie.getString("backdrop_path")
                         movieItems.release_date = movie.getString("release_date")
                         movieItems.popularity = movie.getInt("popularity")
-                        movieItems.original_language = movie.getString("original_language")
                         movieItems.vote_count = movie.getInt("vote_count")
+                        movieItems.vote_average = movie.getInt("vote_average")
                         listItems.add(movieItems)
                     }
                     listMovie.postValue(listItems)

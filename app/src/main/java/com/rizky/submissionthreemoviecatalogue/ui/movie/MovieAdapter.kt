@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.rizky.submissionthreemoviecatalogue.R
@@ -39,6 +40,7 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
                 val posterLink = "https://image.tmdb.org/t/p/original$poster"
                 Glide.with(itemView.context)
                     .load(posterLink)
+                    .placeholder(CircularProgressDrawable(this.context))
                     .apply(RequestOptions().override(350, 550))
                     .into(img_movies_poster)
                 tv_movies_title.text = movieItems.title
