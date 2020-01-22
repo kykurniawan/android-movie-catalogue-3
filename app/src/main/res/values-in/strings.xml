@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Film &amp; Acara TV</string>
+    <string name="title_movie">Film</string>
+    <string name="title_tvShow">Acara TV</string>
+    <string name="title_setting">Pengaturan</string>
+    <string name="movies_title">Judul Film</string>
+    <string name="overview">Sinopsis film</string>
+    <string name="detail">Keterangan</string>
+    <string name="tvshow_name">Nama</string>
+    <string name="backdrop">Latar belakang</string>
+    <string name="poster">poster</string>
+    <string name="progress_text">Mohon tunggu</string>
+    <string name="popularity">Kepopuleran:</string>
+    <string name="vote_count">Pilih</string>
+    <string name="vote_average">Peringkat</string>
+    <string name="vote">Pemilih:</string>
+    <string name="rating">Peringkat:</string>
+    <string name="release">Rilis: </string>
+    <string name="failed_data">Gagal mengambil data dari API</string>
+    <string name="error">Kesalahan</string>
+    <string name="air_date">Tayang perdana:</string>
+    <string name="change_language">Ubah Bahasa</string>
+    <string name="language_setting">Bahasa</string>
+</resources>

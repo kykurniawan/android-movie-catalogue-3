@@ -1,5 +1,6 @@
 package com.rizky.submissionthreemoviecatalogue.ui.tvshow
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.rizky.submissionthreemoviecatalogue.R
-import kotlinx.android.synthetic.main.item_row_movie.view.btn_detail
+import kotlinx.android.synthetic.main.item_row_tvshow.view.btn_detail
 import kotlinx.android.synthetic.main.item_row_tvshow.view.*
 
 class TvshowAdapter : RecyclerView.Adapter<TvshowAdapter.TvshowViewHolder>() {
@@ -49,6 +50,9 @@ class TvshowAdapter : RecyclerView.Adapter<TvshowAdapter.TvshowViewHolder>() {
                         "Detail For ${tvshowItems.name}",
                         Toast.LENGTH_SHORT
                     ).show()
+                    val mIntent = Intent(this.context, TvshowDetail::class.java)
+                    mIntent.putExtra(TvshowDetail.EXTRA_TVSHOW, tvshowItems)
+                    context.startActivity(mIntent)
                 }
             }
         }

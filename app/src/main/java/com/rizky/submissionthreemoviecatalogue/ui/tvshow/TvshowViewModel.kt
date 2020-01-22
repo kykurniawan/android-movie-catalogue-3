@@ -45,9 +45,10 @@ class TvshowViewModel : ViewModel() {
                         tvshowItems.name = tvshow.getString("name")
                         tvshowItems.overview = tvshow.getString("overview")
                         tvshowItems.poster_path = tvshow.getString("poster_path")
+                        tvshowItems.backdrop_path = tvshow.getString("backdrop_path")
                         tvshowItems.first_air_date = tvshow.getString("first_air_date")
                         tvshowItems.popularity = tvshow.getInt("popularity")
-                        tvshowItems.original_language = tvshow.getString("original_language")
+                        tvshowItems.vote_average = tvshow.getInt("vote_average")
                         tvshowItems.vote_count = tvshow.getInt("vote_count")
                         listItems.add(tvshowItems)
                     }
