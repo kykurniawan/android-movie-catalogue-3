@@ -22,4 +22,5 @@
     <string name="air_date">Tayang perdana:</string>
     <string name="change_language">Ubah Bahasa</string>
     <string name="language_setting">Bahasa</string>
+    <string name="favorite">favorit</string>
 </resources>
