@@ -12,6 +12,11 @@
         android:title="@string/title_tvShow" />
 
     <item
+        android:id="@+id/navigation_favorite"
+        android:icon="@drawable/ic_favorite"
+        android:title="@string/favorite"/>
+
+    <item
         android:id="@+id/navigation_setting"
         android:icon="@drawable/baseline_settings_applications_black_24dp"
         android:title="@string/title_setting" />
