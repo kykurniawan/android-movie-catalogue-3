@@ -48,6 +48,8 @@ class TvshowFragment : Fragment() {
             if (tvshowItems != null) {
                 this.adapter.setData(tvshowItems)
                 showLoading(false)
+            } else {
+                this.adapter.setData(ArrayList())
             }
         })
 

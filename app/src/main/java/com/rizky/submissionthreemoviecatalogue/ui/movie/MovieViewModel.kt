@@ -9,7 +9,7 @@ import com.loopj.android.http.AsyncHttpResponseHandler
 import cz.msebera.android.httpclient.Header
 import org.json.JSONObject
 
-class MovieViewModel : ViewModel(){
+class MovieViewModel : ViewModel() {
 
     companion object {
         private const val API_KEY = "ad17726d6285f718d265aa2de12213bb"

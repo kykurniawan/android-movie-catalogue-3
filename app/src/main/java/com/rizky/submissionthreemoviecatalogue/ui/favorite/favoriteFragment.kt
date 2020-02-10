@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.rizky.submissionthreemoviecatalogue.R
+import com.rizky.submissionthreemoviecatalogue.ui.favorite.adapter.SectionsPagerAdapter
+import kotlinx.android.synthetic.main.fragment_favorite.*
 
 class favoriteFragment : Fragment() {
 
@@ -22,5 +24,8 @@ class favoriteFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val sectionsPagerAdapter = SectionsPagerAdapter(requireContext(), childFragmentManager)
+        view_pager.adapter = sectionsPagerAdapter
+        tabs.setupWithViewPager(view_pager)
     }
 }

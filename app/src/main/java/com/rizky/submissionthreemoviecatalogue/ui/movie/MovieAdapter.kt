@@ -54,6 +54,7 @@ class MovieAdapter : RecyclerView.Adapter<MovieAdapter.MovieViewHolder>() {
                     ).show()
                     val mIntent = Intent(this.context, MovieDetail::class.java)
                     mIntent.putExtra(MovieDetail.EXTRA_MOVIE, movieItems)
+                    mIntent.putExtra("from", "Movie")
                     context.startActivity(mIntent)
                 }
             }

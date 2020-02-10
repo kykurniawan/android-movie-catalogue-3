@@ -4,7 +4,7 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-class TvshowItems (
+class TvshowItems(
     var id: Int = 0,
     var name: String? = null,
     var first_air_date: String? = null,

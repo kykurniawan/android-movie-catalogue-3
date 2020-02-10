@@ -52,6 +52,7 @@ class TvshowAdapter : RecyclerView.Adapter<TvshowAdapter.TvshowViewHolder>() {
                     ).show()
                     val mIntent = Intent(this.context, TvshowDetail::class.java)
                     mIntent.putExtra(TvshowDetail.EXTRA_TVSHOW, tvshowItems)
+                    mIntent.putExtra("from", "TvShow")
                     context.startActivity(mIntent)
                 }
             }

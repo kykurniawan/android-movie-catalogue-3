@@ -22,5 +22,13 @@
     <string name="air_date">Tayang perdana:</string>
     <string name="change_language">Ubah Bahasa</string>
     <string name="language_setting">Bahasa</string>
-    <string name="favorite">favorit</string>
+    <string name="favorite">Favorit</string>
+
+    <string name="add_to_favorite">Tambahkan ke favorit</string>
+    <string name="added_to_favorite">Ditambahkan ke favorit</string>
+    <string name="item_already_added">Item sudah ditambahkan</string>
+    <string name="failed_to_add_data">Gagal menambahkan data</string>
+    <string name="deleted_from_favorite">Dihapus dari daftar favorit</string>
+    <string name="delete_from_favorite">Hapus dari daftar favorit</string>
+    <string name="no_data_for_now">Tidak ada data untuk saat ini</string>
 </resources>

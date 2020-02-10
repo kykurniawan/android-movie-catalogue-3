@@ -6,7 +6,6 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.loopj.android.http.AsyncHttpClient
 import com.loopj.android.http.AsyncHttpResponseHandler
-import com.rizky.submissionthreemoviecatalogue.ui.tvshow.TvshowItems
 import cz.msebera.android.httpclient.Header
 import org.json.JSONObject
 

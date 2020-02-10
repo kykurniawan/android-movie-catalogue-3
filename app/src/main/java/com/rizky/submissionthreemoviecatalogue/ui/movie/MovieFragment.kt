@@ -49,6 +49,7 @@ class MovieFragment : Fragment() {
                 this.adapter.setData(movieItems)
                 showLoading(false)
             } else {
+                this.adapter.setData(ArrayList())
                 val snackbar = Snackbar.make(view, R.string.failed_data, Snackbar.LENGTH_LONG)
                 snackbar.show()
             }

@@ -4,7 +4,7 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-class MovieItems (
+data class MovieItems(
     var id: Int = 0,
     var title: String? = null,
     var release_date: String? = null,
